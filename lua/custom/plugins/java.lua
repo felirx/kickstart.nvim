@@ -25,6 +25,19 @@ return {
       --      on_attach = require('plugins.configs.lspconfig').on_attach,
       --      capabilities = require('plugins.configs.lspconfig').capabilities,
       --      filetypes = { 'java' },
+      jsettings = {
+        java = {
+          configuration = {
+            runtimes = {
+              {
+                name = "JavaSE-21",
+                path = "/opt/jdk-21",
+                default = true,
+              }
+            }
+          }
+        }
+      }
     }
   end,
 }
