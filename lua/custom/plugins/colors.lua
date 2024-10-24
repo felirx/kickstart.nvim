@@ -22,6 +22,14 @@ return { -- You can easily change to a different colorscheme.
     require('tokyonight').setup {
       disable_background = true,
       transparent = true,
+      on_highlights = function(hl, colors)
+          hl.LineNrAbove = {
+            fg = colors.blue5,
+          }
+          hl.LineNrBelow = {
+            fg = colors.blue5,
+          }
+      end,
     }
 
     vim.cmd.colorscheme 'tokyonight'
