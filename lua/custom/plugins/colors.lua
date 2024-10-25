@@ -29,6 +29,9 @@ return { -- You can easily change to a different colorscheme.
           hl.LineNrBelow = {
             fg = colors.blue5,
           }
+          hl.MsgArea = {
+            fg = colors.green,
+        }
       end,
     }
 
