@@ -172,6 +172,7 @@ vim.opt.termguicolors = true
 vim.opt.isfname:append '@-@'
 
 vim.opt.colorcolumn = '80'
+vim.opt.cwh = 34
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
