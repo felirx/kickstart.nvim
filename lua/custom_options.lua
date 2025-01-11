@@ -35,3 +35,7 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagn
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
 vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, { desc = 'Format selected' })
+
+vim.filetype.add {
+  pattern = { ['.*/hyprland%.conf'] = 'hyprlang' },
+}
